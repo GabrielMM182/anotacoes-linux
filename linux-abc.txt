@@ -22,6 +22,8 @@
 -POSTGRESQL
 -MONGODB
 -UBUNTU/RESTRICTED/EXTRAS
+-VIRTUAL BOX
+-DOCKER
 
 ----------------------------------------------------------------
 ##COMANDOS PARA SE LEMBRAR 
