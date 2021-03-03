@@ -1,0 +1,146 @@
+#ABC LINUX PARA CONFIGURAR INICIALMENTE MEU PC
+
+-STEAM 
+-ANDROID STUDIO
+-ANYDESK
+-BRAVE
+-FRANZ
+-GHOSTWRITER
+-MYSQL WORKBENCH
+-NOTEPAD ++
+-OPENOFFICE
+-REMMINA
+-SPOTIFY
+-VS CODE
+-PHP
+-LARAVEL
+-NPM
+-NODE
+-FLAT REMIX
+-GIT
+-ASDF
+-POSTGRESQL
+-MONGODB
+-UBUNTU/RESTRICTED/EXTRAS
+
+----------------------------------------------------------------
+##COMANDOS PARA SE LEMBRAR 
+
+- MOVER JANELAS (SUPER + SHIFT + PAGEUP/ PAGEDOWN)
+- MOVER JANELAS VERTICAL (SUPER + SETA DIR/ ESQ)
+
+##MODIFICAR O TEMA DO UBUNTU 
+
+- SUDO APT INSTALL (SEMPRE QUE FOR INSTALAR ALGO VAI COLOCAR ISSO ANTES)
+
+- SUDO APT INSTALL GIT 
+- MKDIR PROJECTS (cria uma pasta projects)
+- CD PROJECTS
+- GIT CLONE............ FLAT-REMIX & FLAT-REMIX-GTK (pegar no video akita como referencia)
+- MKDIR -P~/.ICONS && MKDIR -P~/.THEMES
+- CP -R FLAT-REMIX/FLAT-REMIX* ~/-ICONS/&& CP-R FLAT-REMIX-GTK/FLAT-REMIX-GTK* ~/.THEMES/
+- SUDO APT INSTALL GNOME-TWEAK-TOOL FONTS-HACK-TTF -Y
+
+
+*CLEAR = LIMPAR TERMINAL*
+*MKDIR = CRIAR DIRETORIOS*
+*SUDO APT INSTALL ____ = NOME DO PROGRAMA QUE VAI INTALAR*
+*WHOAIM = DESCOBRIR O USUARIO NO LINUX*
+*LS = MOSTRA OS DIRETORIOS DISPONIVEIS APENAS NA PASTA*
+*LS -LA = MOSTRA OS DIRETORIOS DISPONIVEIS E OS OCULTOS COM . APENAS NA PASTA*
+*RM -R ___ = REMOVER DIRETORIO/PASTA*
+*PWD = MOSTRA O DIRETORIO QUE ESTA EM USO*
+*CD $HOME / CD ~ = VOLTA PARA  A HOME*
+*CAT = LER ARQUIVOS ATRAVES DO TERMINAL*
+*> = "ESCREVE ALGO PELO TERMINAL"*
+
+-EXEMPLO- 
+MKDIR TESTE / CD TESTE / CAT > TESTEE.TXT / LS -LA / CAT TESTEE.TXT
+
+*TOUCH ___.___= CRIA ARQUIVO*
+*ECHO = VAI SOBREESCREVER NO ARQUIVO*
+
+-EXEMPLO-
+ECHO "ESSE E UM TESTE" > TESTE.TXT
+
+*PS AUX =LER ARUIVO*
+*| PIPE = FAZ LIGAÇÃO DE DOIS COMANDOS*
+*LESS = CARREGAR POR STREWAM AOS POUCOS OS ARQUIVOS*
+
+-EXEMPLO-
+
+PS AUX | LESS  -> (J VAI PRA CIMA # K VAI PRA BAIXO # /______ PROCURA UMA PALAVRA ESPECIFICA )
+
+##INSTALADORES NECESSARIOS 
+
+###ASDF LINUX 
+- forma mais fácil para baixar node,ruby,npm.... instalador
+e gerenciamento da versão de todas as linguagens (pegar lista no git)
+
+*sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl*
+
+-ASDF-VM.COM-
+
+
+- sudo apt install curl git
+- git clone --------------
+- echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc echo-e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc (pegar no video akita como referencia)
+
+###TODA VEZ QUE FOR USAR O ASDF PARA BAIXAR UM PLUGIN DEVE SE UTILIZAR ANTES
+
+- echo $PATH
+- which ECHO
+- baixar o plugin desejado (pesquisa no google ASDF PLUGIN LIST e pegar o arquivo .git)
+- asdf plugin-list ____ mostra os baixados
+- asdf list-all ____ plugin baixado
+- asdf install ____plugin baixado __ versão 
+- asdf global ____ plugin baixado ______ versão 
+- ____ plugin baixado -v
+
+
+##BANCO DE DADOS NO LINUX (POSTGRESQL / MONGODB)
+
+*\Q = SAIR*
+*\ H = AJUDA*
+*\L = LISTAR*
+
+*APT SHOW _____ POSTGRESQL - MOSTRA O ARQUIVO QUE PODE SER INSTALADO SO QUE COM MAIS INFORMAÇÕES*
+
+###INSTALAR POSTGRESQL 
+
+- apt show postgresql
+- sudo apt install postgresql postgresql-contrib
+- sudo su -postgres
+- psql
+- \conninfo
+
+###CONFIGURANDO PARA FUNCIONAR CORRETAMENTO 
+
+- sudo su postgres
+- createuser -- interactive _______ adicionar nome
+- Y
+- createdb _______ nome do db
+
+###INSTALAR MONGODB = site oficial todo explicando 
+
+- sudo systemctl status mongod
+
+###CRIPTOGRAFIA e CHAVES PUBLICAS e PRIVADAS SSH NO LINUX 
+
+- chave privada = nuca deve ser compartilhada
+- chave publica = pode ser usada como forma de conexão git/firebase/azura....
+
+*CRIANDO CHAVES*
+
+- ssh -keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "seu@email.com"
+- digitar o passphrase/ nome secreto
+- vai gerar uma img da sua chave 
+- cat ~/.ssh/id_ed25519 = chave privada
+- cat ~/.ssh/id_ed25519.pub = chave publica 
+
+
+#HABILITAR REPOSITIRIOS RESTRITOS NO UBUNTU (serve para ter mais libedade na hora de baixar as coisas)
+
+- sudo apt install ubuntu-restricted-extras -y
+
+Adicionar virtual box também (edvaldobrito.com.br/virtualbox-no-linux)
