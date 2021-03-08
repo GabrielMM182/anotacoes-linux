@@ -24,7 +24,8 @@
 -UBUNTU/RESTRICTED/EXTRAS
 -VIRTUAL BOX
 -DOCKER
-
+-APACHE
+-UFW
 ----------------------------------------------------------------
 ##COMANDOS PARA SE LEMBRAR 
 
