@@ -26,6 +26,7 @@
 -DOCKER
 -APACHE
 -UFW
+-NODE EXPRESS
 ----------------------------------------------------------------
 ##COMANDOS PARA SE LEMBRAR 
 
