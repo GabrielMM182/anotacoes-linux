@@ -147,3 +147,14 @@ e gerenciamento da versão de todas as linguagens (pegar lista no git)
 - sudo apt install ubuntu-restricted-extras -y
 
 Adicionar virtual box também (edvaldobrito.com.br/virtualbox-no-linux)
+
+Adicionar virtual box também (edvaldobrito.com.br/virtualbox-no-linux)
+
+curl ifconfig.me (DESCOBRIR IP)
+
+
+https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt
+
